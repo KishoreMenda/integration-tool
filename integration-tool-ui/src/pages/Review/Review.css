@@ -1,0 +1,43 @@
+.review-container {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.review-data {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+.review-submit-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.review-submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.review-message {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  margin-top: 20px;
+}
