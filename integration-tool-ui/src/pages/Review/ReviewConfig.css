@@ -1,0 +1,45 @@
+.review-config {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.review-config ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.review-config li {
+  margin: 10px 0;
+}
+
+.review-config button {
+  margin: 10px 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.review-config button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.review-config button:first-child:hover {
+  background-color: #0056b3;
+}
+
+.review-config button:last-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.review-config button:last-child:hover {
+  background-color: #218838;
+}

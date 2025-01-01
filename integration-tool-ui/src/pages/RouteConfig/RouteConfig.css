@@ -1,0 +1,36 @@
+.route-config {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.route-config label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.route-config select,
+.route-config input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.route-config button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.route-config button:hover {
+  background-color: #0056b3;
+}

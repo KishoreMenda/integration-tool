@@ -10,11 +10,11 @@ import lombok.Setter;
 @Setter
 @RequiredArgsConstructor
 public class ConfigurationRequestDTO {
-    private String sourceSystem;
-    private String targetSystem;
-    private String scenarioName;
-    private String inputFolder;
-    private String outputFolder;
-    private String inputQueue;
-    private String outputQueue;
+    private String sourceType;
+    private String sourceDetails;
+    private String trigger;
+    private String triggerDetails;
+    private String action;
+    private String destination;
+    private String destinationDetails;
 }
