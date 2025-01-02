@@ -19,7 +19,7 @@ public class Configuration {
     private String trigger;
     private String triggerDetails;
     private String action;
-    private String destination;
+    private String destinationType;
     private String destinationDetails;
 
 }

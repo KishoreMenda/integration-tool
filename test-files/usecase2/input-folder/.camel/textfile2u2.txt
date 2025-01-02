@@ -1,0 +1,2 @@
+This is line 1 in textfile2
+This is line 2 in textfile2

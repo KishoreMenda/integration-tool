@@ -27,7 +27,7 @@ public class ConfigurationController {
         configuration.setTrigger(configurationRequestDTO.getTrigger());
         configuration.setTriggerDetails(configurationRequestDTO.getTriggerDetails());
         configuration.setAction(configurationRequestDTO.getAction());
-        configuration.setDestination(configurationRequestDTO.getDestination());
+        configuration.setDestinationType(configurationRequestDTO.getDestinationType());
         configuration.setDestinationDetails(configurationRequestDTO.getDestinationDetails());
 
         // Save the Configuration object
