@@ -55,7 +55,7 @@ const ReviewConfig = ({ config, setShowReview }) => {
         </li>
         <li>
           <strong>Destination Type:</strong>{" "}
-          {config.destination || "Not Specified"}
+          {config.destinationType || "Not Specified"}
         </li>
         <li>
           <strong>Destination Details:</strong>{" "}

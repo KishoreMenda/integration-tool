@@ -8,7 +8,7 @@ const RouteConfig = () => {
   const [trigger, setTrigger] = useState("");
   const [triggerDetails, setTriggerDetails] = useState("");
   const [action, setAction] = useState("copy");
-  const [destination, setDestination] = useState("");
+  const [destinationType, setDestinationType] = useState("");
   const [destinationDetails, setDestinationDetails] = useState("");
   const [showReview, setShowReview] = useState(false);
 
@@ -16,13 +16,13 @@ const RouteConfig = () => {
     setShowReview(true); // Show the review page
   };
 
-  const config = {
+  const filteredConfig = {
     sourceType,
     sourceDetails,
     trigger,
     triggerDetails,
     action,
-    destination,
+    destinationType,
     destinationDetails,
   };
 
@@ -99,8 +99,8 @@ const RouteConfig = () => {
           <div>
             <label>Destination:</label>
             <select
-              value={destination}
-              onChange={(e) => setDestination(e.target.value)}
+              value={destinationType}
+              onChange={(e) => setDestinationType(e.target.value)}
             >
               <option value="">Select Destination Type</option>
               <option value="folder">Folder</option>
@@ -108,7 +108,7 @@ const RouteConfig = () => {
             </select>
           </div>
 
-          {destination === "folder" && (
+          {destinationType === "folder" && (
             <div>
               <label>Destination Folder:</label>
               <input
@@ -119,7 +119,7 @@ const RouteConfig = () => {
             </div>
           )}
 
-          {destination === "queue" && (
+          {destinationType === "queue" && (
             <div>
               <label>Queue Name:</label>
               <input
@@ -133,7 +133,7 @@ const RouteConfig = () => {
           <button onClick={handleSubmit}>Save Route</button>
         </>
       ) : (
-        <ReviewConfig config={config} setShowReview={setShowReview} />
+        <ReviewConfig config={filteredConfig} setShowReview={setShowReview} />
       )}
     </div>
   );
